@@ -57,8 +57,8 @@ func (s *Sort) SortByColumn(column int, numeric bool) {
 		position = column - 1
 	}
 	sort.SliceStable(s.storage, func(i, j int) bool {
-		fieldsI := strings.Fields(strings.ToLower(s.storage[i]))
-		fieldsJ := strings.Fields(strings.ToLower(s.storage[j]))
+		fieldsI := strings.Fields(s.storage[i])
+		fieldsJ := strings.Fields(s.storage[j])
 
 		// если у левой строки нету нужного столбца, то он по умолчанию меншье
 		if len(fieldsI) <= position {

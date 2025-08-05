@@ -42,8 +42,3 @@ func Parse() *Flags {
 
 	return &flags
 }
-
-// func (f *Flags) AreAllFlagsFalse() bool {
-// 	return !f.FlagB && !f.FlagC && f.FlagK == 0 && !f.FlagM &&
-// 		!f.FlagN && !f.FlagR && !f.FlagU
-// }
